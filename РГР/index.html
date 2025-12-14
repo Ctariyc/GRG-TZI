@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AES Шифрування</title>
+<link rel="stylesheet" href="style.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+<body>
+
+
+<div class="wrapper">
+<h1>AES симетричне шифрування</h1>
+
+
+<section>
+<h2>Шифрування</h2>
+<label>Вхідний текст</label>
+<textarea id="encText"></textarea>
+
+
+<label>Ключ</label>
+<input type="password" id="encKey" />
+
+
+<button id="encrypt">Зашифрувати</button>
+
+
+<label>Зашифрований текст</label>
+<textarea id="encOut" readonly></textarea>
+</section>
+
+
+<section>
+<h2>Розшифрування</h2>
+<label>Зашифрований текст</label>
+<textarea id="decText"></textarea>
+
+
+<label>Ключ</label>
+<input type="password" id="decKey" />
+
+
+<button id="decrypt">Розшифрувати</button>
+
+
+<label>Розшифрований текст</label>
+<textarea id="decOut" readonly></textarea>
+</section>
+
+
+<section class="log">
+<h2>Журнал подій</h2>
+<div id="log"></div>
+</section>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
